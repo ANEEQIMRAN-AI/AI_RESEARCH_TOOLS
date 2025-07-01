@@ -2,15 +2,16 @@
 
 # 🧠 Academic Writing Tools Suite
 
-This repository contains three powerful AI-driven academic tools built using **LangChain**, **LangGraph**, **Google Gemini LLM**, and **Streamlit**. Each tool is designed to enhance writing, research, and productivity for students, researchers, and professionals.
+This repository contains four powerful AI-driven academic tools built using **LangChain**, **LangGraph**, **Google Gemini LLM**, and **Streamlit**. Each tool is designed to enhance writing, research, and productivity for students, researchers, and professionals.
 
 ---
 
 ## 📘 Contents
 
 1. [🎓 Thesis Statement Generator](#-thesis-statement-generator)
-2. [✨ AI Paraphraser Agent (Standard)](#-ai-paraphraser-agent)
-3. [✍️ AI Paraphraser Agent (Agent Flow Version)](#-ai-paraphraser-agent-1)
+2. [📝 AI Essay Writer](#-ai-essay-writer)
+3. [✨ AI Paraphraser Agent (Standard)](#-ai-paraphraser-agent-standard)
+4. [✍️ AI Paraphraser Agent (Enhanced Version)](#-ai-paraphraser-agent-enhanced-version)
 
 ---
 
@@ -93,10 +94,88 @@ streamlit run thesis_agent_generator.py
 
 MIT License. See `LICENSE` file for details.
 
+
 ---
 
+# 📝 AI Essay Writer
 
-# ✨ AI Paraphraser Agent
+This project is an **AI Essay Writing Agent** that generates high-quality academic essays using **LangChain**, **LangGraph**, **Google Gemini LLM**, and **Streamlit**. It ensures the final output is well-written, humanized, grammatically correct, and plagiarism-safe.
+
+## 🚀 Features
+
+* **Full Essay Generation:** Write complete academic essays on any topic.
+* **Natural Tone & Flow:** Outputs sound fluent and professional.
+* **PhD-Level Structure:** Essays follow academic standards with intro, body, and conclusion.
+* **Streamlit UI:** Clean and interactive user interface for input and output display.
+
+## 🛠️ Technologies Used
+
+* **Python**
+* **LangChain / LangGraph**
+* **Google Gemini LLM**
+* **Streamlit**
+
+## 📦 Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/yourusername/ai-essay-writer.git
+   cd ai-essay-writer
+   ```
+
+2. **Create and activate virtual environment:**
+
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # Windows: venv\Scripts\activate
+   ```
+
+3. **Install requirements:**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Environment variables:**
+
+   Create a `.env` file and add:
+
+   ```env
+   GOOGLE_API_KEY=your_google_gemini_api_key
+   ```
+
+## ▶️ Usage
+
+Run using Streamlit:
+
+```bash
+streamlit run AI_ESSAY.py
+```
+
+## 📄 Essay Structure
+
+Each essay follows this structure:
+
+* **Introduction:** Hook, background, thesis, roadmap
+* **Body Paragraphs:** Topic sentence, evidence, analysis, transitions
+* **Conclusion:** Summary, synthesis, implications, lasting impression
+
+## ✅ TODO / Future Enhancements
+
+* Add citation integration (APA/MLA)
+* PDF export option
+* Add tone and length control
+* Add plagiarism percentage feedback
+
+## 📄 License
+
+MIT License. See `LICENSE` file for details.
+
+
+---
+
+# ✨ AI Paraphraser Agent (Standard)
 
 This project is an **AI-based Paraphrasing Tool** built with **LangChain**, **LangGraph**, **Streamlit**, and **Google Gemini LLM**. It takes any paragraph or PDF content as input and intelligently rephrases, humanizes, and grammatically corrects it for natural and fluent output.
 
@@ -147,8 +226,6 @@ This project is an **AI-based Paraphrasing Tool** built with **LangChain**, **La
    GOOGLE_API_KEY=your_google_gemini_api_key
    ```
 
-   *Get your `GOOGLE_API_KEY` from [Google AI Studio](https://aistudio.google.com/app/apikey).*
-
 ## ▶️ Usage
 
 Run the app using Streamlit:
@@ -159,15 +236,9 @@ streamlit run AI_PARAPHRASER.py
 
 ## 🧠 How It Works
 
-The paraphrasing pipeline follows this LangGraph agent flow:
-
-1. **Input (Text or PDF)** →
-2. **LLM Rephraser** →
-3. **Humanized Agent** →
-4. **Grammar Agent** →
-5. **Output Display (with word count)**
-
-You can also clear your input or upload a PDF to automatically populate the text field.
+* Enter a paragraph or upload a PDF.
+* Click "Paraphrase" to get a rewritten, humanized, grammatically correct output.
+* View real-time word count for both input and output.
 
 ## ✅ TODO / Future Enhancements
 
@@ -180,27 +251,20 @@ You can also clear your input or upload a PDF to automatically populate the text
 
 MIT License. See `LICENSE` file for details.
 
----
-
-Always ready to help writers sound fluent, polished, and professional.
 
 ---
 
-# ✍️ AI Paraphraser Agent
+# ✍️ AI Paraphraser Agent (Enhanced Version)
 
-This project is a **Paraphrasing AI Agent** built using **LangChain**, **LangGraph**, and **Google Gemini LLM**, with a smooth **Streamlit UI**. It takes your input paragraph and transforms it into a fully humanized, grammatically flawless, and plagiarism-safe version using an advanced multi-agent pipeline.
-
----
+This project is a **Paraphrasing AI Agent** built using **LangChain**, **LangGraph**, and **Google Gemini LLM**, with a smooth **Streamlit UI**. It takes your input paragraph and transforms it into a fully humanized, grammatically flawless, and plagiarism-safe version.
 
 ## 🚀 Features
 
 * **Deep Paraphrasing:** Rewrites input text using advanced vocabulary and sentence structure while preserving original meaning.
-* **Humanization Agent:** Makes the paraphrased output sound natural, emotionally resonant, and free from robotic tone.
-* **Grammar Correction Agent:** Detects and fixes all grammar, punctuation, and syntax issues.
-* **Plagiarism Elimination Agent:** Deeply rewrites the final output to ensure near 0% plagiarism.
+* **Humanization:** Makes the paraphrased output sound natural, emotionally resonant, and free from robotic tone.
+* **Grammar Correction:** Detects and fixes all grammar, punctuation, and syntax issues.
+* **Plagiarism Elimination:** Deeply rewrites the final output to ensure near 0% plagiarism.
 * **Streamlit UI:** Simple and interactive web interface for easy use.
-
----
 
 ## 🛠️ Technologies Used
 
@@ -208,8 +272,6 @@ This project is a **Paraphrasing AI Agent** built using **LangChain**, **LangGra
 * **LangChain** & **LangGraph**
 * **Google Gemini LLM (via API)**
 * **Streamlit**
-
----
 
 ## 📦 Installation
 
@@ -234,13 +296,12 @@ This project is a **Paraphrasing AI Agent** built using **LangChain**, **LangGra
    ```
 
 4. **Set up environment variables:**
-   Create a `.env` file in the root directory and add:
 
-   ```bash
+   Create a `.env` file and add:
+
+   ```env
    GOOGLE_API_KEY=your_google_gemini_api_key
    ```
-
----
 
 ## ▶️ Usage
 
@@ -250,27 +311,12 @@ Run the app via Streamlit:
 streamlit run app.py
 ```
 
----
-
-## 🔁 Agent Flow
-
-1. 🧾 **Input Paragraph** (User-provided)
-2. 🤖 **Rephrasing Agent** – Paraphrases the content
-3. 🧠 **Humanizer Agent** – Enhances tone and voice
-4. ✅ **Grammar Agent** – Corrects all linguistic errors
-5. 🔐 **Plagiarism Agent** – Makes final version unique and safe
-6. 📄 **Final Output** – Clean, human-like, and plagiarism-free
-
----
-
 ## 📄 Output Quality
 
 * Fully rewritten, plagiarism-safe paragraphs
 * Academic-level vocabulary and grammar
 * Human-style tone and clarity
 * Natural transitions and narrative flow
-
----
 
 ## ✅ TODO / Future Enhancements
 
@@ -279,14 +325,8 @@ streamlit run app.py
 * Integrate plagiarism percentage checker
 * Export to Google Docs
 
----
-
 ## 📄 License
 
 MIT License. See `LICENSE` file for details.
-
----
-
-Always ready to help writers, students, and researchers rephrase content smartly and ethically.
 
 ---
