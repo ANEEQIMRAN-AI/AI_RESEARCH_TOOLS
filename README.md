@@ -1,6 +1,4 @@
-Here's your **combined `README.md` file** with **all three projects merged into a single document**, without altering or omitting any content. Each section is clearly separated and preserved as-is:
 
----
 
 # 🧠 Academic Writing Tools Suite
 
