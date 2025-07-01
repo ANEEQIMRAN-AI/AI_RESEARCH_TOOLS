@@ -97,9 +97,6 @@ MIT License. See `LICENSE` file for details.
 
 ---
 
-Made with ❤️ for academic writers and students.
-
----
 
 # ✨ AI Paraphraser Agent
 
@@ -187,7 +184,7 @@ MIT License. See `LICENSE` file for details.
 
 ---
 
-Made with ❤️ to help writers sound fluent, polished, and professional.
+Always ready to help writers sound fluent, polished, and professional.
 
 ---
 
@@ -292,6 +289,6 @@ MIT License. See `LICENSE` file for details.
 
 ---
 
-Made with ❤️ to help writers, students, and researchers rephrase content smartly and ethically.
+Always ready to help writers, students, and researchers rephrase content smartly and ethically.
 
 ---
